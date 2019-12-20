@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="FroggerStarter.View.Pages.GamePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Canvas x:Name="canvas" Width="{StaticResource AppWidth}" Height="{StaticResource AppHeight}" Background="Black">
+
+        <Rectangle Canvas.Top="55" Fill="Gray" Width="{StaticResource AppWidth}" Height="50" />
+        <Rectangle Canvas.Top="355" Fill="Gray" Width="{StaticResource AppWidth}" Height="55" />
+
+        <Rectangle x:Name="waterLevelRiver" Canvas.Top="105" Canvas.Left="0" Width="{StaticResource AppWidth}"
+                   Height="250" Fill="DodgerBlue" Visibility="Collapsed" />
+        <Rectangle x:Name="waterLevelTopShoulder" Canvas.Top="55" Canvas.Left="0" Width="{StaticResource AppWidth}"
+                   Height="50" Fill="Green" Visibility="Collapsed" />
+        <Rectangle x:Name="waterLevelBottomShoulder" Canvas.Top="355" Canvas.Left="0" Width="{StaticResource AppWidth}"
+                   Height="55" Fill="Green" Visibility="Collapsed" />
+
+        <TextBlock Text="Lives: " FontSize="20" Canvas.Left="15" Canvas.Top="15" Height="30" Width="55"
+                   Foreground="White" />
+        <TextBlock x:Name="livesTextBlock" Text="" FontSize="20" Canvas.Left="70" Canvas.Top="15" Height="30"
+                   Width="10" Foreground="White" />
+
+        <TextBlock Text="Frogger" FontSize="30" Canvas.Left="272.5" Canvas.Top="5" Height="40" Width="105"
+                   Foreground="LawnGreen" />
+
+        <TextBlock Text="Score: " FontSize="20" Canvas.Left="540" Canvas.Top="15" Height="30" Width="60"
+                   Foreground="White" />
+        <TextBlock x:Name="scoreTextBlock" Text="" FontSize="20" Canvas.Left="595" Canvas.Top="15" Height="30"
+                   Width="45" Foreground="White" />
+
+        <TextBlock x:Name="gameOverTextBlock" Text="GAME OVER" FontSize="100" Canvas.Left="50" Canvas.Top="145"
+                   Height="120" Width="550" Foreground="White" Visibility="Collapsed" Canvas.ZIndex="1" />
+
+        <ProgressBar x:Name="lifeScoreProgressBar" Foreground="LawnGreen" Value="20" Maximum="20" Height="5"
+                     Width="200" Canvas.Left="225" Canvas.Top="405" />
+        <ProgressBar x:Name="invulnProgressBar" Visibility="Collapsed" Foreground="DarkRed" Value="5" Maximum="5"
+                     Height="5" Width="100" Canvas.Top="405" Canvas.Left="10" />
+        <Grid Height="410" Width="650" />
+
+    </Canvas>
+</Page>

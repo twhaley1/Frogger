@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="FroggerStarter.View.Pages.StartPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FroggerStarter.View.Sprites.Frog"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="startScreenGrid" Width="{StaticResource AppWidth}" Height="{StaticResource AppHeight}"
+          Background="Black" RequestedTheme="Dark">
+        <StackPanel x:Name="playAgainStackPanel" Orientation="Vertical" HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Width="{StaticResource AppHeight}">
+            <StackPanel x:Name="upperFrogSpritePanel" Orientation="Horizontal" HorizontalAlignment="Center"
+                        VerticalAlignment="Center" Width="{StaticResource AppHeight}" Height="55">
+                <local:FrogSprite />
+                <Rectangle Height="50" Width="40" />
+                <local:FrogSprite />
+                <Rectangle Height="50" Width="40" />
+                <local:FrogDeathFrameFour />
+                <Rectangle Height="50" Width="40" />
+                <local:FrogSprite />
+                <Rectangle Height="50" Width="40" />
+                <local:FrogSprite />
+            </StackPanel>
+            <TextBlock Text="FROGGER" Margin="10" FontSize="70" Height="80" Foreground="LawnGreen"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <StackPanel x:Name="lowerFrogSpritePanel" Orientation="Horizontal" HorizontalAlignment="Center"
+                        VerticalAlignment="Center" Width="{StaticResource AppHeight}" Height="55">
+                <local:FrogSprite />
+                <Rectangle Height="50" Width="40" />
+                <local:FrogSprite />
+                <Rectangle Height="50" Width="40" />
+                <local:FrogDeathFrameFour />
+                <Rectangle Height="50" Width="40" />
+                <local:FrogSprite />
+                <Rectangle Height="50" Width="40" />
+                <local:FrogSprite />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Width="{StaticResource AppHeight}"
+                        Height="100">
+                <Rectangle Height="40" Width="55" />
+                <Button x:Name="playButton" Content="Play" Height="40" Width="120" Margin="15"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center" Click="PlayButton_Click" />
+                <Button x:Name="playHardcoreButton" Content="Play Hardcore" Height="40" Width="120" Margin="15"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center" Click="HardcorePlayButton_Click" />
+            </StackPanel>
+
+            <StackPanel x:Name="buttonPanel" Orientation="Horizontal" VerticalAlignment="Center"
+                        Width="{StaticResource AppHeight}" Height="100">
+                <Rectangle Height="40" Width="35" />
+                <Button x:Name="viewHighScoreButton" Content="View High-Score Board" Height="40"
+                        HorizontalAlignment="Center" VerticalAlignment="Center" Click="ViewHighScoreButton_Click" />
+                <Rectangle Height="40" Width="12" />
+                <Button x:Name="clearHighScoreButton" Content="Clear High-Score Board" Height="40"
+                        HorizontalAlignment="Center" VerticalAlignment="Center" Click="ClearHighScoreButton_Click" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

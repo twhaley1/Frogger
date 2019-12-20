@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{ABCD6358-2B8A-431E-82BB-F8AB0350DF9A}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FroggerStarter</RootNamespace>
+    <AssemblyName>FroggerStarter</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>bin\x64\Debug\FroggerStarter.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Collisions\Collision.cs" />
+    <Compile Include="Enums\Enum.cs" />
+    <Compile Include="EventArgs\GameOverEventArgs.cs" />
+    <Compile Include="EventArgs\HighScoreNavigationToEventArgs.cs" />
+    <Compile Include="EventArgs\IsHardcoreEventArgs.cs" />
+    <Compile Include="EventArgs\MovableObjectEventArgs.cs" />
+    <Compile Include="EventArgs\PlayAgainNavigationToEventArgs.cs" />
+    <Compile Include="EventArgs\UpdateInvulnCountdownEventArgs.cs" />
+    <Compile Include="EventArgs\UpdateLifeCountdownEventArgs.cs" />
+    <Compile Include="EventArgs\UpdateLivesEventArgs.cs" />
+    <Compile Include="EventArgs\UpdateScoreEventArgs.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Model\Animation.cs" />
+    <Compile Include="Model\Factories\LaneFactory.cs" />
+    <Compile Include="Model\GameObjects\PowerUps\BonusTimePowerUp.cs" />
+    <Compile Include="Model\GameObjects\Frog.cs" />
+    <Compile Include="Controller\GameManager.cs" />
+    <Compile Include="Model\GameObjects\GameObject.cs" />
+    <Compile Include="Model\GameObjects\Home.cs" />
+    <Compile Include="Model\GameObjects\PowerUps\InvulnerabilityPowerUp.cs" />
+    <Compile Include="Model\GameObjects\LilyPad.cs" />
+    <Compile Include="Model\GameObjects\Limo.cs" />
+    <Compile Include="Model\GameObjects\Log.cs" />
+    <Compile Include="Model\GameObjects\Platform.cs" />
+    <Compile Include="Model\GameObjects\PodRacer.cs" />
+    <Compile Include="Model\GameObjects\PodRacerX.cs" />
+    <Compile Include="Model\GameObjects\PowerUps\PowerUp.cs" />
+    <Compile Include="Model\HighScore\HighScoreData.cs" />
+    <Compile Include="Model\HighScore\HighScores.cs" />
+    <Compile Include="Model\HighScore\HighScoreSerializer.cs" />
+    <Compile Include="Model\HighScore\LevelScoreNameComparer.cs" />
+    <Compile Include="Model\HighScore\NameScoreLevelComparer.cs" />
+    <Compile Include="Model\HomeRow.cs" />
+    <Compile Include="Model\Lane.cs" />
+    <Compile Include="Model\GameSettings.cs" />
+    <Compile Include="Model\Level.cs" />
+    <Compile Include="Model\GameObjects\Obstacle.cs" />
+    <Compile Include="Model\Factories\LevelFactory.cs" />
+    <Compile Include="Model\Factories\ObstacleFactory.cs" />
+    <Compile Include="Model\PowerUpManager.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Sound\SoundEffect.cs" />
+    <Compile Include="Utilities\Pause.cs" />
+    <Compile Include="Utilities\RelayCommand.cs" />
+    <Compile Include="ViewModel\HighScoreViewModel.cs" />
+    <Compile Include="View\Pages\GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Pages\HighScorePage.xaml.cs">
+      <DependentUpon>HighScorePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\PlayAgainPage.xaml.cs">
+      <DependentUpon>PlayAgainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\BaseSprite.xaml.cs">
+      <DependentUpon>BaseSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Frog\FrogDeathFrameFour.xaml.cs">
+      <DependentUpon>FrogDeathFrameFour.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Frog\FrogDeathFrameOne.xaml.cs">
+      <DependentUpon>FrogDeathFrameOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Frog\FrogDeathFrameThree.xaml.cs">
+      <DependentUpon>FrogDeathFrameThree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Frog\FrogDeathFrameTwo.xaml.cs">
+      <DependentUpon>FrogDeathFrameTwo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Frog\FrogMovementSprite.xaml.cs">
+      <DependentUpon>FrogMovementSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Frog\FrogSprite.xaml.cs">
+      <DependentUpon>FrogSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Home\HomeFullSprite.xaml.cs">
+      <DependentUpon>HomeFullSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Home\HomeEmptySprite.xaml.cs">
+      <DependentUpon>HomeEmptySprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\ISpriteRenderer.cs" />
+    <Compile Include="View\Sprites\Obstacle\LilyPadSprite.xaml.cs">
+      <DependentUpon>LilyPadSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Obstacle\LimoSprite.xaml.cs">
+      <DependentUpon>LimoSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Obstacle\LogSprite.xaml.cs">
+      <DependentUpon>LogSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Obstacle\PodRacerSprite.xaml.cs">
+      <DependentUpon>PodRacerSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Obstacle\PodRacerXSprite.xaml.cs">
+      <DependentUpon>PodRacerXSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Powerups\BonusTimePowerUpSprite.xaml.cs">
+      <DependentUpon>BonusTimePowerUpSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sprites\Powerups\InvulnerabilityPowerUpSprite.xaml.cs">
+      <DependentUpon>InvulnerabilityPowerUpSprite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Sounds\FrogHomeSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sounds\GameOverSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sounds\LevelCompleteSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sounds\PowerUpSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sounds\SplashSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sounds\TimerDeathSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sounds\VehicleCollisionSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sounds\WallBumpSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="View\Pages\GamePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Pages\HighScorePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\PlayAgainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\BaseSprite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\Frog\FrogDeathFrameFour.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\Frog\FrogDeathFrameOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\Frog\FrogDeathFrameThree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\Frog\FrogDeathFrameTwo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\Frog\FrogMovementSprite.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Sprites\Frog\FrogSprite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\Home\HomeFullSprite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\Home\HomeEmptySprite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\Obstacle\LilyPadSprite.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Sprites\Obstacle\LimoSprite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\Obstacle\LogSprite.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Sprites\Obstacle\PodRacerSprite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\Obstacle\PodRacerXSprite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sprites\Powerups\BonusTimePowerUpSprite.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Sprites\Powerups\InvulnerabilityPowerUpSprite.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Pages\StartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.8</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
